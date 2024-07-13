@@ -149,19 +149,3 @@ Content of `hostfile`:
 mpirun -np 2 -hostfile hostfile ./mpi_sample
 ```
 
-### Common Errors and Tips 
- 
-1. **Ensure both VMs have the same version of MPICH** .
- 
-2. **Ensure correct IP addresses and hostnames are set in `/etc/hosts`** :
-
-```sh
-sudo nano /etc/hosts
-```
-Content for both VMs:
-
-```php
-127.0.0.1   localhost
-<IP_OF_VM1> vm1
-<IP_OF_VM2> vm2
-```
