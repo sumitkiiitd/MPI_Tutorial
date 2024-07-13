@@ -148,5 +148,7 @@ Content of `hostfile`:
 ```sh
 mpirun -np 2 -hostfile hostfile ./mpi_sample
 ```
+5. **Output** :
 
-<img src="output.png" width="300" />
+
+<img src="output.png" width="1000" />
