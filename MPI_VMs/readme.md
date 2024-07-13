@@ -1,0 +1,1 @@
+This repo will help you to learn MPI with practical setup guide
