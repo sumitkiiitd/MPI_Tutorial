@@ -149,3 +149,4 @@ Content of `hostfile`:
 mpirun -np 2 -hostfile hostfile ./mpi_sample
 ```
 
+/Users/sumitkumar/Documents/GitHub/MPI_Tutorial/MPI_VMs/Screenshot 2024-07-13 at 4.37.22 PM.png
