@@ -35,9 +35,8 @@ int main(int argc, char** argv) {
 - **Initialize MPI**: 
     `MPI_Init(int* argc, char*** argv)`
   - Constructs MPI’s global and internal variables. The argc and argv parameters are used to pass command-line arguments to MPI. Passing NULL for both parameters means that the command-line arguments are not being passed to MPI. re’s why this might be done:
-
-        1. Simplicity: If the MPI program does not need to process any command-line arguments, passing NULL makes the code simpler.
-        2. Compatibility: Some MPI implementations allow NULL to be passed if command-line arguments are not needed. This ensures compatibility across different systems and MPI implementations.
+    1. Simplicity: If the MPI program does not need to process any command-line arguments, passing NULL makes the code simpler.
+    2. Compatibility: Some MPI implementations allow NULL to be passed if command-line arguments are not needed. This ensures compatibility across different systems and MPI implementations.
 
 - **Get Number of Processes**: 
     `MPI_Comm_size(MPI_Comm communicator, int* size)`
