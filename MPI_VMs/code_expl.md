@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
 
 - **Get Number of Processes**: 
     `MPI_Comm_size(MPI_Comm communicator, int* size)`
-  - Returns the size of a communicator. In our example, MPI_COMM_WORLD (which is constructed for us by MPI) encloses all of the processes in the job, so this call should return the amount of processes that were requested for the job.
+  - Returns the size of a communicator. In our example, `MPI_COMM_WORLD` (which is constructed for us by MPI) encloses all of the processes in the job, so this call should return the amount of processes that were requested for the job.
 
 
 
