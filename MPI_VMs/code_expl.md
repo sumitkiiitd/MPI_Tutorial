@@ -29,6 +29,7 @@ int main(int argc, char** argv) {
     MPI_Finalize(); // Finalize MPI environment
 }
 
+```
 ## Key Functions
 
 - **Initialize MPI**: `MPI_Init(int* argc, char*** argv)`
