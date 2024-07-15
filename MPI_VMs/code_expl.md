@@ -41,6 +41,12 @@ int main(int argc, char** argv) {
 - **Get Number of Processes**: 
     `MPI_Comm_size(MPI_Comm communicator, int* size)`
   - Returns the size of a communicator. In our example, `MPI_COMM_WORLD` (which is constructed for us by MPI) encloses all of the processes in the job, so this call should return the amount of processes that were requested for the job.
+  - In MPI (Message Passing Interface), a communicator is a fundamental concept that defines a group of processes that can communicate with each other. Each communicator provides a separate communication context, meaning that messages sent within one communicator do not interfere with messages sent within another communicator. Here’s a more detailed explanation:
+
+    ***Communicator Basics***
+    - Definition: A communicator is an object that contains a group of processes. It provides a scope for communication and synchronization among the processes it includes.
+    - Default Communicator: When an MPI program starts, all processes are included in a default communicator called MPI_COMM_WORLD. This communicator encompasses all the processes that were started with the MPI program.
+    -Scope and Context: Communicators provide a context for communication operations. This means that the same rank can refer to different processes in different communicators. Messages sent in one communicator are not visible in another, even if they have the same ranks and tags.
 
 
 
@@ -55,3 +61,5 @@ int main(int argc, char** argv) {
 - **Finalize MPI**: 
     `MPI_Finalize()`
   - Cleans up the MPI environment.
+
+
